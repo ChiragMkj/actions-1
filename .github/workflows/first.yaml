@@ -8,9 +8,11 @@ jobs:
             - name: checkout repo
               uses: actions/checkout@v4
             - name: my first action
-              run: echo "testing my first action"
-            - name: list files
-              run: ls -lrta
-            - name: read files
-              run: cat README.md  
-              shell: bash
+              run: |
+                echo "testing my first action"
+                ls -lrta
+                cat README.md
+           
+                shell: bash
+            - name: GEnerate ASCII 
+              run: cowsay -f dragon "Run for cover, I am a Dragon...RAWR" >> dragon.txt   
