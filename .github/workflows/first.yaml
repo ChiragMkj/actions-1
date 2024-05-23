@@ -11,3 +11,4 @@ jobs:
               run: ls -lrta
             - name: read files
               run: cat README.md  
+              shell: bash
