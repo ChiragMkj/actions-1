@@ -10,4 +10,4 @@ jobs:
             - name: list files
               run: ls -lrta
             - name: read files
-              run: cat Readme.md  
+              run: cat README.md  
